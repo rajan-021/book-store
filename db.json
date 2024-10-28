@@ -1,0 +1,39 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "The Great Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Classic",
+      "year": 1925
+    },
+    {
+      "id": "4d61",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert Kiyosaki",
+      "genre": "Finance and Business",
+      "year": "1997"
+    },
+    {
+      "id": "8c16",
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "genre": "Business",
+      "year": "2011"
+    },
+    {
+      "id": "2e1e",
+      "title": "Do or Die..!",
+      "author": "Rajan Maurya",
+      "genre": "Truth",
+      "year": "2024"
+    },
+    {
+      "id": "8140",
+      "title": "tare",
+      "author": "Shivam Dubey",
+      "genre": "Movie",
+      "year": "2000"
+    }
+  ]
+}
