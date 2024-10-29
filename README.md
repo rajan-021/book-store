@@ -65,13 +65,13 @@ Backend: JSON Server (mock backend)
 Utilities: react-hot-toast (for notifications)
 
 ## Screenshots
-![Home Page](https://drive.google.com/file/d/1kS3Cmrak_fwXKQN6zS1Fx4O8xaRJi3v5/view?usp=sharing)
+![Home Page](public/Screenshot (756).png)
 
-![Add Book](https://asset.cloudinary.com/ddksmhojb/6486d2887ed1558a3ea08a7d62f68ec7)
+![Add Book](public/Screenshot (754).png)
 
-![Edit Book](https://asset.cloudinary.com/ddksmhojb/2910b0a7a185fe5d26a12cc2ad2392ed)
+![Edit Book](public/Screenshot (755).png)
 
-![Loading view](https://asset.cloudinary.com/ddksmhojb/4774464a46599c5b8bb0f68af75d462e)
+![Loading view](public/Screenshot (757).png)
 
 
 
