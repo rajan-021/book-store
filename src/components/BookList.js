@@ -15,6 +15,7 @@ const BookList = () => {
         axios.get("http://localhost:5000/books")
             .then((response) => {
                 setBooks(response.data);
+                console.log(response.data);
                 setTimeout(() => {
                     setLoading(false);
                 }, 1000);
@@ -28,6 +29,7 @@ const BookList = () => {
         axios.delete(`http://localhost:5000/books/${id}`)
             .then(() => {
                 setBooks(books.filter((book) => book.id !== id));
+                console.log(books);
                 toast.error("Book deleted!");
             })
             .catch((error) => console.error("Error deleting book:", error));
@@ -51,66 +53,78 @@ const BookList = () => {
     });
 
     return (
-        <div>
-            <div className="bg-slate-800 rounded mb-8">
+        <div className="">
+            <div className="bg-slate-800 rounded mb-5">
                 <Navbar />
             </div>
-            <h1 className="text-2xl font-bold pl-5">Book List</h1>
-
-            <div className="px-5 py-2">
-                <input
-                    type="text"
-                    placeholder="Search by title or author"
-                    className="p-2 border w-full rounded"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                />
+            <div className="flex justify-center items-center mb-4">
+                <h1 className="text-2xl font-bold pl-5">Book List</h1>
             </div>
 
-            <div className="px-5 py-2">
-                <label htmlFor="sort" className="mr-2 font-medium">Sort by:</label>
-                <select
-                    id="sort"
-                    className="p-2 border rounded"
-                    value={sortOption}
-                    onChange={(e) => setSortOption(e.target.value)}
-                >
-                    <option value="title">Title</option>
-                    <option value="author">Author</option>
-                    <option value="year">Publication Year</option>
-                </select>
+            <div className="flex justify-center items-center flex-row">
+                <div className=" w-1/2">
+                    <div className="px-5 py-2  w-15">
+                        <input
+                            type="text"
+                            placeholder="Search by title or author"
+                            className="p-2 border w-full rounded"
+                            value={searchTerm}
+                            onChange={(e) => setSearchTerm(e.target.value)}
+                        />
+                    </div>
+
+                    <div className="px-5 py-2">
+                        <label htmlFor="sort" className="mr-2 font-medium">Sort by:</label>
+                        <select
+                            id="sort"
+                            className="p-2 border rounded"
+                            value={sortOption}
+                            onChange={(e) => setSortOption(e.target.value)}
+                        >
+                            <option value="title">Title</option>
+                            <option value="author">Author</option>
+                            <option value="year">Publication Year</option>
+                        </select>
+                    </div>
+                </div>
             </div>
 
             {loading ? (
                 <Spinner />
             ) : (
-                <ul className="mt-4">
-                    {sortedBooks.length > 0 ? (
-                        sortedBooks.map((book) => (
-                            <li key={book.id} className="border pl-5 p-2 mb-2 flex justify-between">
-                                <div>
-                                    <p className="font-bold">{book.title}</p>
-                                    <p>{book.author} - {book.genre} ({book.year})</p>
-                                </div>
-                                <div className="flex items-center">
-                                    <Link to={`/edit/${book.id}`} className="mr-3 text-blue-500">Edit</Link>
-                                    <button
-                                        onClick={() => handleDelete(book.id)}
-                                        className="text-red-500 border-slate-800 rounded-full pr-6"
-                                    >
-                                        Delete
-                                    </button>
-                                </div>
-                            </li>
-                        ))
-                    ) : (
-                        <p className="text-gray-500 pl-5">No books found</p>
-                    )}
-                </ul>
+                <div className="w-full flex justify-center items-center">
+                    <ul className="mt-2 w-1/2 ">
+                        {sortedBooks.length > 0 ? (
+                            sortedBooks.map((book) => (
+                                <li key={book.id} className="border pl-5 p-2 mb-2 flex justify-between">
+                                    <div>
+                                        <p className="font-bold">{book.title}</p>
+                                        <p>{book.author} - {book.genre} ({book.year})</p>
+                                    </div>
+                                    <div className="flex items-center">
+                                        <Link to={`/edit/${book.id}`} className="mr-3 text-blue-500">Edit</Link>
+                                        <button
+                                            onClick={() => handleDelete(book.id)}
+                                            className="text-red-500 border-slate-800 rounded-full pr-6"
+                                        >
+                                            Delete
+                                        </button>
+                                    </div>
+                                </li>
+                            ))
+                        ) : (
+                            <p className="text-gray-500 pl-5">No books found</p>
+                        )}
+                    </ul>
+                </div>
             )}
-            <Link to="/add" className="mt-4 inline-block bg-slate-800 text-white py-2 px-4 rounded hover:text-green-400">
-                Add New Book
-            </Link>
+
+            <div className="flex justify-center items-center w-full">
+                <Link to="/add" className="mt-4 inline-block bg-slate-800 text-white py-2 px-4 rounded hover:text-green-400">
+                    Add New Book
+                </Link>
+            </div>
+
         </div>
     );
 };

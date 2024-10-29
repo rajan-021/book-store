@@ -1,13 +1,6 @@
 {
   "books": [
     {
-      "id": "1",
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "genre": "Classic",
-      "year": 1925
-    },
-    {
       "id": "4d61",
       "title": "Rich Dad Poor Dad",
       "author": "Robert Kiyosaki",
@@ -27,13 +20,6 @@
       "author": "Rajan Maurya",
       "genre": "Truth",
       "year": "2024"
-    },
-    {
-      "id": "8140",
-      "title": "tare",
-      "author": "Shivam Dubey",
-      "genre": "Movie",
-      "year": "2000"
     }
   ]
 }

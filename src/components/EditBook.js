@@ -46,15 +46,17 @@ const EditBook = () => {
         <div className="bg-slate-800 rounded mb-8"> 
         <Navbar />
         </div>
+        <div className="flex justify-center items-center flex-col w-full">
       <h1 className="text-2xl font-bold">Edit Book</h1>
       {error && <p className="text-red-500">{error}</p>}
-      <form onSubmit={handleSubmit} className="mt-4">
+      <form onSubmit={handleSubmit} className="mt-4 w-1/2">
         <input type="text" name="title" value={book.title} onChange={handleChange} className="block w-full p-2 mb-2 border" />
         <input type="text" name="author" value={book.author} onChange={handleChange} className="block w-full p-2 mb-2 border" />
         <input type="text" name="genre" value={book.genre} onChange={handleChange} className="block w-full p-2 mb-2 border" />
         <input type="text" name="year" value={book.year} onChange={handleChange} className="block w-full p-2 mb-2 border" />
         <button type="submit" className="bg-slate-800 text-white py-2 px-4 rounded hover:text-green-400">Update Book</button>
       </form>
+      </div>
     </div>
   );
 };

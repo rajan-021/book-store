@@ -2,6 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
+import Navbar from "./Navbar";
+
 
 
 const AddBook = () => {
@@ -36,15 +38,20 @@ const AddBook = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold">Add Book</h1>
-      {error && <p className="text-red-500">{error}</p>}
-      <form onSubmit={handleSubmit} className="mt-4">
-        <input type="text" name="title" placeholder="Title" onChange={handleChange} className="block w-full p-2 mb-2 border" />
-        <input type="text" name="author" placeholder="Author" onChange={handleChange} className="block w-full p-2 mb-2 border" />
-        <input type="text" name="genre" placeholder="Genre" onChange={handleChange} className="block w-full p-2 mb-2 border" />
-        <input type="text" name="year" placeholder="Year" onChange={handleChange} className="block w-full p-2 mb-2 border" />
-        <button type="submit" className="bg-slate-800 text-white py-2 px-4 rounded hover:text-green-400">Add Book</button>
-      </form>
+      <div className="bg-slate-800 rounded">
+        <Navbar />
+      </div>
+      <div className="flex items-center justify-center w-full flex-col">
+        <h1 className="text-2xl font-bold mt-11">Add Book</h1>
+        {error && <p className="text-red-500">{error}</p>}
+        <form onSubmit={handleSubmit} className="mt-4 w-1/2">
+          <input type="text" name="title" placeholder="Title" onChange={handleChange} className="block w-full p-2 mb-2 border" />
+          <input type="text" name="author" placeholder="Author" onChange={handleChange} className="block w-full p-2 mb-2 border" />
+          <input type="text" name="genre" placeholder="Genre" onChange={handleChange} className="block w-full p-2 mb-2 border" />
+          <input type="text" name="year" placeholder="Year" onChange={handleChange} className="block w-full p-2 mb-2 border" />
+          <button type="submit" className="bg-slate-800 text-white py-2 px-4 rounded hover:text-green-400">Add Book</button>
+        </form>
+      </div>
     </div>
   );
 };

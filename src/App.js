@@ -3,12 +3,11 @@ import BookList from "./components/BookList";
 import AddBook from "./components/AddBook";
 import EditBook from "./components/EditBook";
 
-
 function App() {
   return (
     <div>
       <Router>
-        <div className="container mx-auto p-4">
+        <div className="">
           <Routes>
             <Route path="/" element={<BookList />} />
             <Route path="/add" element={<AddBook />} />
