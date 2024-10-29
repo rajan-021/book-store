@@ -13,15 +13,13 @@ Make sure you have the following installed:
 1. Clone the Repository:
 
 ```bash
-Copy code
 git clone https://github.com/your-username/book-catalog-app.git
 cd book-catalog-app
 ```
 
 2. Install Dependencies:
    
-```
-bash
+```bash
 npm install
 ```
 
@@ -29,16 +27,14 @@ npm install
 
 JSON Server is used as a mock backend for this project. Run the following command to start the server:
 
-```
-bash
+```bash
 npx json-server --watch db.json --port 5000
 ```
 This will create a JSON Server running at http://localhost:5000.
 
 4. Start the React Application:
 
-```
-bash
+```bash
 npm start
 ```
 The app will be running on http://localhost:3000.
@@ -69,13 +65,15 @@ Backend: JSON Server (mock backend)
 Utilities: react-hot-toast (for notifications)
 
 ##Screenshots
-![Home Page]([https://example.com/screenshot.png](https://asset.cloudinary.com/ddksmhojb/546e068baa1189ac07f410e8688acb45))
+![Home Page](https://asset.cloudinary.com/ddksmhojb/546e068baa1189ac07f410e8688acb45)
 
 ![Add Book](https://asset.cloudinary.com/ddksmhojb/6486d2887ed1558a3ea08a7d62f68ec7)
 
 ![Edit Book](https://asset.cloudinary.com/ddksmhojb/2910b0a7a185fe5d26a12cc2ad2392ed)
 
-![Loading view]([https://example.com/screenshot.png](https://asset.cloudinary.com/ddksmhojb/4774464a46599c5b8bb0f68af75d462e))
+![Loading view](https://asset.cloudinary.com/ddksmhojb/4774464a46599c5b8bb0f68af75d462e)
+
+
 
 
 
