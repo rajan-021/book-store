@@ -1,14 +1,14 @@
-##Getting Started
+## Getting Started
 Follow these instructions to set up and run the project on your local machine.
 
-##Prerequisites
+## Prerequisites
 Make sure you have the following installed:
 
 1.Node.js
 2.npm
 3.JSON Server 
 
-##Installation
+## Installation
 
 1. Clone the Repository:
 
@@ -39,7 +39,7 @@ npm start
 ```
 The app will be running on http://localhost:3000.
 
-##Features
+## Features
 
 List Books: Displays a list of books with their details (title, author, genre, year).
 
@@ -58,13 +58,13 @@ Loading Indicators: Shows a spinner while data is being fetched.
 Success/Error Messages: Displays toast notifications for successful or failed operations.
 
 
-##Tech Stack
+## Tech Stack
 
 Frontend: ReactJS, TailwindCSS, React Router, Axios
 Backend: JSON Server (mock backend)
 Utilities: react-hot-toast (for notifications)
 
-##Screenshots
+## Screenshots
 ![Home Page](https://asset.cloudinary.com/ddksmhojb/546e068baa1189ac07f410e8688acb45)
 
 ![Add Book](https://asset.cloudinary.com/ddksmhojb/6486d2887ed1558a3ea08a7d62f68ec7)
