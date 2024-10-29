@@ -65,7 +65,7 @@ Backend: JSON Server (mock backend)
 Utilities: react-hot-toast (for notifications)
 
 ## Screenshots
-![Home Page](https://asset.cloudinary.com/ddksmhojb/546e068baa1189ac07f410e8688acb45)
+![Home Page](https://drive.google.com/file/d/1kS3Cmrak_fwXKQN6zS1Fx4O8xaRJi3v5/view?usp=sharing)
 
 ![Add Book](https://asset.cloudinary.com/ddksmhojb/6486d2887ed1558a3ea08a7d62f68ec7)
 
