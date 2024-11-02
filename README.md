@@ -19,7 +19,7 @@ Make sure you have the following installed:
 
 ```bash
 git clone https://github.com/rajan-021/book-store.git
-cd book-catalog-app
+cd book-store
 ```
 
 2. Install Dependencies:
