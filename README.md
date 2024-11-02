@@ -18,7 +18,7 @@ Make sure you have the following installed:
 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/rajan-021/book-catalog-app.git
+git clone https://github.com/rajan-021/book-store.git
 cd book-catalog-app
 ```
 
