@@ -28,7 +28,7 @@ cd book-store
 npm install
 ```
 
-4. Start the React Application:
+3. Start the React Application:
 
 ```bash
 npm start
