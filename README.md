@@ -1,3 +1,8 @@
+## Live Link
+
+[Live Link](https://book-store-green-nine.vercel.app/)
+
+
 ## Getting Started
 Follow these instructions to set up and run the project on your local machine.
 
@@ -6,14 +11,14 @@ Make sure you have the following installed:
 
 1.Node.js
 2.npm
-3.JSON Server 
+3. JSON Server (optional, for local development)
 
 ## Installation
 
 1. Clone the Repository:
 
 ```bash
-git clone https://github.com/your-username/book-catalog-app.git
+git clone https://github.com/rajan-021/book-catalog-app.git
 cd book-catalog-app
 ```
 
@@ -22,15 +27,6 @@ cd book-catalog-app
 ```bash
 npm install
 ```
-
-3. Start JSON Server:
-
-JSON Server is used as a mock backend for this project. Run the following command to start the server:
-
-```bash
-npx json-server --watch db.json --port 5000
-```
-This will create a JSON Server running at http://localhost:5000.
 
 4. Start the React Application:
 
@@ -61,17 +57,15 @@ Success/Error Messages: Displays toast notifications for successful or failed op
 ## Tech Stack
 
 Frontend: ReactJS, TailwindCSS, React Router, Axios
-Backend: JSON Server (mock backend)
+Backend: JSON Server (mock backend) or Live API on Render
 Utilities: react-hot-toast (for notifications)
 
-## Screenshots
-![Home Page](public/Screenshot (756).png)
+## Backend Repository
+[Backend Repo](https://github.com/rajan-021/api-book)
 
-![Add Book](public/Screenshot (754).png)
+## Hosted API on Render
+[Api Link](https://api-book-5rg1.onrender.com/books)
 
-![Edit Book](public/Screenshot (755).png)
-
-![Loading view](public/Screenshot (757).png)
 
 
 

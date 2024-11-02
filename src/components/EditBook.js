@@ -11,7 +11,7 @@ const EditBook = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/books/${id}`)
+    axios.get(`https://api-book-5rg1.onrender.com/books/${id}`)
       .then((response) => {
         setBook(response.data);
       })
@@ -33,7 +33,7 @@ const EditBook = () => {
       return;
     }
 
-    axios.put(`http://localhost:5000/books/${id}`, book)
+    axios.put(`https://api-book-5rg1.onrender.com/books/${id}`, book)
       .then(() => {
         toast.success("Book Updated Successfully");
         navigate("/");

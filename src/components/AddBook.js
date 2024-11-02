@@ -26,7 +26,7 @@ const AddBook = () => {
       return;
     }
 
-    axios.post("http://localhost:5000/books", book)
+    axios.post("https://api-book-5rg1.onrender.com/books", book)
       .then(() => {
         navigate("/");
         toast.success("Book added Successfully");

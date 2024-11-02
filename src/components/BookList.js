@@ -12,7 +12,7 @@ const BookList = () => {
     const [sortOption, setSortOption] = useState("title");
 
     useEffect(() => {
-        axios.get("http://localhost:5000/books")
+        axios.get("https://api-book-5rg1.onrender.com/books")
             .then((response) => {
                 setBooks(response.data);
                 console.log(response.data);
@@ -26,7 +26,7 @@ const BookList = () => {
     }, []);
 
     const handleDelete = (id) => {
-        axios.delete(`http://localhost:5000/books/${id}`)
+        axios.delete(`https://api-book-5rg1.onrender.com/books/${id}`)
             .then(() => {
                 setBooks(books.filter((book) => book.id !== id));
                 console.log(books);
