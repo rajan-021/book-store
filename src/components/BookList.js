@@ -16,9 +16,6 @@ const BookList = () => {
             .then((response) => {
                 setBooks(response.data);
                 console.log(response.data);
-                setTimeout(() => {
-                    setLoading(false);
-                }, 1000);
             })
             .catch((error) => {
                 console.error("Error fetching data:", error);
